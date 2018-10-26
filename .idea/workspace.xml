@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41136111-db1f-41ce-842b-018abc2776a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/src/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,7 +50,7 @@
           <entry key="css" value="533" />
           <entry key="gitignore" value="37" />
           <entry key="html" value="95" />
-          <entry key="js" value="1566" />
+          <entry key="js" value="1568" />
           <entry key="json" value="93" />
           <entry key="md" value="62" />
           <entry key="npmignore" value="10" />
@@ -60,7 +61,7 @@
           <entry key="CSS" value="533" />
           <entry key="HTML" value="95" />
           <entry key="JSON" value="93" />
-          <entry key="JavaScript" value="1566" />
+          <entry key="JavaScript" value="1568" />
           <entry key="PLAIN_TEXT" value="109" />
         </counts>
       </usages-collector>
@@ -119,8 +120,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            <state relative-caret-position="180">
+              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -288,13 +289,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22390000" />
+    <option name="totallyTimeSpent" value="22533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.24947146" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979339" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" sideWeight="0.50206614" side_tool="true" weight="0.24947146" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -308,7 +309,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010571" side_tool="true" weight="0.388102" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4989429" visible="true" weight="0.4220963" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4989429" visible="true" weight="0.4220963" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -401,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="180">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
