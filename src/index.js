@@ -10,6 +10,7 @@ export default class CustomPagination extends Component {
             currentPage: 1,
             startingPage: 1,
             pageCount: Math.ceil(props.itemCount / props.itemPerPage),
+            range: props.range,
         };
     }
 
@@ -43,7 +44,7 @@ export default class CustomPagination extends Component {
         const pageBegining = Math.max(Math.min(currentPage - (range / 2), 1), pageEnding - range);
         const {PaginationItem} = this;
 
-        for (let i = pageBegining; i <= pageEnding; i++) {
+        for (let i = Math.max(1, pageBegining); i <= pageEnding; i++) {
             shownPages.push(
                 <PaginationItem
                     className={["pagination-box", (currentPage === i) ? "pagination-box-active" : ""].join(" ")}
@@ -79,11 +80,11 @@ export default class CustomPagination extends Component {
                 <PaginationItem
                     onClick={this.handlePageChange(1)}
                     name={"First"}
-                    visible={currentPage !== 1}/>
+                    visible={currentPage > 1}/>
                 <PaginationItem
                     onClick={this.handlePageChange(currentPage - 1)}
                     name={"Prev"}
-                    visible={currentPage !== 1}/>
+                    visible={currentPage > 1}/>
 
                 <PaginationItem
                     onClick={this.handlePageIntervalChange(-range)}
@@ -106,7 +107,11 @@ export default class CustomPagination extends Component {
 
 
 CustomPagination.propTypes = {
-    range: PropTypes.number,
+    range: function (props, propName, componentName) {
+        if (!(props[propName] % 2 === 0)) {
+            return new Error('range must be even!');
+        }
+    },
     itemCount: PropTypes.number.isRequired,
     itemPerPage: PropTypes.number.isRequired,
     onPageChange: PropTypes.func.isRequired,

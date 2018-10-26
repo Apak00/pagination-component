@@ -7,8 +7,8 @@ const App = () => (
         <div>EXAMPLE</div>
         <ExampleComponent
             onPageChange={pageNumber => console.log("Page number is: ", pageNumber)}
-            itemCount={224}
-            itemPerPage={10}/>
+            itemCount={500}
+            itemPerPage={10} range={3}/>
     </div>
 );
 render(<App/>, document.getElementById("root"));
