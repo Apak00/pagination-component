@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41136111-db1f-41ce-842b-018abc2776a2" name="Default Changelist" comment="" />
+    <list default="true" id="41136111-db1f-41ce-842b-018abc2776a2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -100,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -227,12 +229,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540479135650</updated>
       <workItem from="1540479136917" duration="3130000" />
-      <workItem from="1540534013536" duration="13926000" />
+      <workItem from="1540534013536" duration="14151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17056000" />
+    <option name="totallyTimeSpent" value="17281000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="798" extended-state="0" />
@@ -352,7 +354,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
