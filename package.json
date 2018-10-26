@@ -1,10 +1,14 @@
 {
   "name": "adesso-pagination",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "",
   "main": "dist/index.js",
   "author": "mahmud.apak@adesso.com.tr",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Apak00/adesso-pagination"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "demo": "webpack-dev-server --mode development"
