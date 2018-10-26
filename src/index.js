@@ -41,73 +41,65 @@ export default class CustomPagination extends Component {
         const shownPages = [];
         const pageEnding = Math.min(pageCount, startingPage + range);
         const pageBegining = Math.max(Math.min(currentPage - (range / 2), 1), pageEnding - range);
+        const {PaginationItem} = this;
 
         for (let i = pageBegining; i <= pageEnding; i++) {
             shownPages.push(
-                <div
+                <PaginationItem
                     className={["pagination-box", (currentPage === i) ? "pagination-box-active" : ""].join(" ")}
                     key={String(i)}
+                    name={i}
                     onClick={this.handlePageChange(i)}>
-                    {i}
-                </div>);
+                </PaginationItem>);
         }
         return shownPages;
+    };
+
+    PaginationItem = ({visible = true, name, onClick, className = "pagination-box"}) => {
+        if (visible)
+            return (
+                <button
+                    className={className}
+                    onClick={onClick}>
+                    {name}
+                </button>
+            );
+        else {
+            return null;
+        }
     };
 
     render() {
         const {pageCount, currentPage, startingPage} = this.state;
         const {range} = this.props;
+        const {PaginationItem} = this;
 
         return (
             <div className={"pagination-container"}>
-                {currentPage === 1 ? null :
-                    <span>
-                        <span
-                            className={"pagination-box"}
-                            style={{borderBottomLeftRadius: 4, borderTopLeftRadius: 4}}
-                            onClick={this.handlePageChange(1)}
-                            disabled={currentPage === 1}>
-                            First
-                        </span>
-                        <span
-                            className={"pagination-box"}
-                            onClick={this.handlePageChange(currentPage - 1)}
-                            disabled={currentPage === 1}
-                        >Prev
-                        </span>
-                    </span>
-                }
-                {startingPage > 1 ?
-                    <span
-                        className={"pagination-box"}
-                        onClick={this.handlePageIntervalChange(-range)}
-                    >...
-                    </span> : null
-                }
+                <PaginationItem
+                    onClick={this.handlePageChange(1)}
+                    name={"First"}
+                    visible={currentPage !== 1}/>
+                <PaginationItem
+                    onClick={this.handlePageChange(currentPage - 1)}
+                    name={"Prev"}
+                    visible={currentPage !== 1}/>
+
+                <PaginationItem
+                    onClick={this.handlePageIntervalChange(-range)}
+                    name={"..."}
+                    visible={startingPage > 1}/>
                 {this.renderPages()}
-                {pageCount > (startingPage + range) ?
-                    <span
-                        className={"pagination-box"}
-                        onClick={this.handlePageIntervalChange(range)}
-                    >...
-                    </span> : null
-                }
-                {currentPage === pageCount ? null :
-                    <span>
-                        <span
-                            className={"pagination-box"}
-                            onClick={this.handlePageChange(currentPage + 1)}
-                            disabled={currentPage === pageCount}
-                        >Next
-                        </span>
-                        <span
-                            className={"pagination-box"}
-                            onClick={this.handlePageChange(pageCount)}
-                            disabled={currentPage === pageCount}
-                        >Last
-                        </span>
-                    </span>
-                }
+                <PaginationItem
+                    onClick={this.handlePageIntervalChange(range)}
+                    name={"..."}
+                    visible={pageCount > (startingPage + range)}/>
+                <PaginationItem
+                    onClick={this.handlePageChange(currentPage + 1)}
+                    name={"Next"} visible={currentPage !== pageCount}/>
+                <PaginationItem
+                    onClick={this.handlePageChange(pageCount)}
+                    name={"Last"} visible={currentPage !== pageCount}/>
             </div>);
     }
 }
